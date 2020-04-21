@@ -12,6 +12,8 @@ disqusShortname = "hairstudiopinella" # get your shortname form here : https://d
 defaultContentLanguage = "nl"
 disableLanguages = ['en']
 
+enableRobotsTXT = true
+
 ############################# Plugins ##############################
 [params.plugins]
 
