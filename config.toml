@@ -1,0 +1,223 @@
+######################### default configuration ###############################
+baseURL = "http://demo.hairstudiopinella.nl"
+title = "Hairstudio Pinella"
+theme = "biztrox-hugo"
+# post pagination
+paginate = "6"
+# post excerpt
+summaryLength = "10"
+# disqus short name
+disqusShortname = "hairstudiopinella" # get your shortname form here : https://disqus.com
+
+defaultContentLanguage = "nl"
+disableLanguages = ['en']
+
+############################# Plugins ##############################
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "plugins/bootstrap/bootstrap.min.css"
+  [[params.plugins.css]]
+  URL = "plugins/magnific-popup/magnific-popup.css"
+  [[params.plugins.css]]
+  URL = "plugins/slick/slick.css"
+  [[params.plugins.css]]
+  URL = "plugins/slick/slick-theme.css"
+  [[params.plugins.css]]
+  URL = "plugins/themify-icons/themify-icons.css"
+  [[params.plugins.css]]
+  URL = "plugins/animate/animate.css"
+  
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "plugins/jQuery/jquery.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/bootstrap/bootstrap.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/slick/slick.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/magnific-popup/magnific-popup.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/filterizr/jquery.filterizr.min.js"
+  [[params.plugins.js]]
+  URL = "plugins/google-map/gmap.js"
+
+
+#################################### navigation ##################################
+[menu]
+    
+  [[menu.main]]
+  name = "Foto's"
+  URL = "fotos"
+  weight = 1
+  [[menu.main]]
+  name = "Contact"
+  URL = "contact"
+  weight = 2
+  [[menu.main]]
+  name = "Maak een afspraak"
+  URL = "afspraak"
+  weight = 3
+  
+  # footer menu
+  [[menu.footer]]
+  name = "Legal"
+  URL = "#"
+  weight = 1
+  
+  [[menu.footer]]
+  name = "Sitemap"
+  URL = "#"
+  weight = 2
+  
+  [[menu.footer]]
+  name = "Privacy Policy"
+  URL = "#"
+  weight = 3
+  
+  [[menu.footer]]
+  name = "Terms & Conditions"
+  URL = "#"
+  weight = 4
+
+
+########################### default parameters #################################
+[params]
+logo = "images/logo/sitelogo.png"
+logo_white = "images/logo/sitelogo.png"
+mail = "info@hairstudiopinella.nl"
+mobile = "+31623937512"
+# Meta data
+description = "Airspace Hugo theme"
+author = "Hairstudio Pinella"
+# contact form
+contact_form_action = "#"
+# Google Analitycs
+google_analitycs_id = "Your ID"
+#google_analitycs_id = "UA-70469629-1"
+
+# mailchimp subsciption
+mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
+mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
+
+# nav Button
+[params.nav_button]
+enable = false
+link = "onhandigknopje"
+
+# preloader
+[params.preloader]
+enable = false
+preloader = "images/preloader.gif"
+
+############################ Contact information ############################
+[[params.contacts]]
+icon = "ti-mobile"
+
+  [[params.contacts.contact]]
+  contact_item = "06 239 375 12"
+
+[[params.contacts]]
+icon = "ti-email"
+
+  [[params.contacts.contact]]
+  contact_item = "info@hairstudiopinella.nl"
+
+[[params.contacts]]
+icon = "ti-map-alt"
+
+  [[params.contacts.contact]]
+  contact_item = "Looer Enkweg 7<br> 7207 RT Zutphen"
+############################ google map #####################################
+[params.gmap]
+enable = false
+#gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
+#map_latitude = "51.5223477"
+#map_longitude = "-0.1622023"
+map_marker = "images/marker.png"
+
+############################ client logo slider #############################
+[[params.clients_logo_slider]]
+logo = "images/client-logo/client-logo-1.png"
+link = "#"
+
+[[params.clients_logo_slider]]
+logo = "images/client-logo/client-logo-2.png"
+link = "https://examplesite.com"
+
+[[params.clients_logo_slider]]
+logo = "images/client-logo/client-logo-3.png"
+link = "#"
+
+[[params.clients_logo_slider]]
+logo = "images/client-logo/client-logo-4.png"
+link = "https://examplesite.com"
+
+[[params.clients_logo_slider]]
+logo = "images/client-logo/client-logo-5.png"
+link = "#"
+
+[[params.clients_logo_slider]]
+logo = "images/client-logo/client-logo-3.png"
+link = "https://examplesite.com"
+
+########################### social icon #####################################
+[[params.social]]
+icon = "ti-facebook" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+icon = "ti-twitter-alt" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+icon = "ti-vimeo-alt" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
+[[params.social]]
+icon = "ti-linkedin" # themify icon pack : https://themify.me/themify-icons
+link = "#"
+
+
+[Languages]
+
+  ################################ Franch language ################################
+  [Languages.nl]
+  languageName = "nl"
+  languageCode = "nl-nl"
+  contentDir = "content/dutch"
+  weight = 1
+  home = ""
+
+  # footer
+  [Languages.nl.params.footer]
+  content = ""
+
+  # subscribe
+  subscribe = "x"
+  subscribe_content = "x"
+
+  # copyright
+  copyright = "Copyright &copy; 2020 Hairstudio Pinella"
+
+  ################################### English language #####################################
+  [Languages.en]
+  languageName = "En"
+  languageCode = "en-us"
+  contentDir = "content/english"
+  weight = 2
+  home = "Home"
+
+  # footer
+  [Languages.en.params.footer]
+  content = "Lorem ipsum dolor amet consectetur adipisicing elit sed eiusm tempor incididunt labore dolore magna aliqua enim."
+
+  # subscribe
+  subscribe = "Subscribe Us"
+  subscribe_content = "Lorem ipsum dolor sit amet, consect etur adipisicing. elit sed do eiusmod."
+
+  # copyright
+  copyright = "Copyright &copy; 2019 a hugo theme by [themefisher.com](https://themefisher.com)"
+
+
